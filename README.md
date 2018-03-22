@@ -1,6 +1,4 @@
-# Serverless Node starter kit
-
-Features:
+# Serverless Node Starter Kit
 
 - environment "stage" aware config.js
 - .editorconfig file

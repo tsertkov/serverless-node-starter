@@ -4,13 +4,10 @@
       "env",
       {
         "targets": {
-          "node": "6.10"
+          "node": "8.10"
         }
       }
     ],
     "stage-3"
-  ],
-  "plugins": [
-    "transform-runtime"
   ]
 }

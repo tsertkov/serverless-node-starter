@@ -5,6 +5,7 @@ plugins:
   - serverless-offline
 
 custom:
+  stage: ${opt:stage, self:provider.stage}
   webpack:
     packager: 'yarn'
     packagerOptions: {}
@@ -14,7 +15,7 @@ provider:
   runtime: nodejs8.10
   region: eu-central-1
   environment:
-    STAGE: ${opt:stage, 'dev'}
+    STAGE: ${self:custom.stage}
 
 functions:
   fn1:
